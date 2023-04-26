@@ -24,7 +24,7 @@ function getRealClientIp() {
     } else if(getenv('REMOTE_ADDR')) {
         $ipaddress = getenv('REMOTE_ADDR');
     } else {
-        $ipaddress = 'unknown (¾Ë¼ö¾øÀ½)';
+        $ipaddress = 'unknown (알수없음)';
     }
     return $ipaddress;
 }
