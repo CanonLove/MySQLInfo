@@ -1,6 +1,5 @@
 # MySQLInfo
-Print the MySQL table statement.
-MySQL 테이블 명세서를 출력합니다.
+Print the MySQL table statement. (MySQL 테이블 명세서를 출력합니다.)
 
 
 # development language (개발언어)
