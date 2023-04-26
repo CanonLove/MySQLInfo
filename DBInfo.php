@@ -284,7 +284,7 @@ if( ($DB1Ip == "") || ($DB1Name=="")  || ($DB1User=="") ) {
 				<td colspan=5><b> &nbsp;<?php echo  "'".$DB1Name."' Table List"; ?></b></td>
 			</tr>
 			<tr class="tr1 td1 textbold">
-				<td>No</td><td>Table Name</td><td>Engline</td><td>Field Count</td><td>Table Comment</td>
+				<td>No</td><td>Table Name</td><td>Engine</td><td>Field Count</td><td>Table Comment</td>
 			</tr>
 			<?php
 			$fieldCnt1 = 0;
