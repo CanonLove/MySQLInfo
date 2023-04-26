@@ -11,7 +11,7 @@ PHP
 2) PHP 7.4.33 + MySQL 8.0.22 (InnoDB) => OK
 
 
-# used mysqli connect()
- mysqli connect() 사용하여 작성하였습니다.
+# used mysqli_connect()
+ mysqli_connect() 사용하여 작성하였습니다.
  
  
