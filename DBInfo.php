@@ -24,7 +24,7 @@ function getRealClientIp() {
     } else if(getenv('REMOTE_ADDR')) {
         $ipaddress = getenv('REMOTE_ADDR');
     } else {
-        $ipaddress = 'unknown (¾Ë¼ö¾øÀ½)';
+        $ipaddress = 'unknown (Â¾Ã‹Â¼Ã¶Â¾Ã¸Ã€Â½)';
     }
     return $ipaddress;
 }
@@ -341,7 +341,7 @@ if( ($DB1Ip == "") || ($DB1Name=="")  || ($DB1User=="") ) {
 					$FieldCnt = sizeof($TableField[$i]);
 					for($kk=0; $kk<$FieldCnt; $kk++) {
 						echo "<tr>";
-						echo "<td class='td1'>".$kk."</td>";
+						echo "<td class='td1'>".($kk+1)."</td>";
 						echo "<td>".$TableField[$i][$kk]['COLUMN_NAME']."</td>";
 						echo "<td>".$TableField[$i][$kk]['COLUMN_TYPE']."</td>";
 						echo "<td>".$TableField[$i][$kk]['IS_NULLABLE']."</td>";
