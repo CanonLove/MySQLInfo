@@ -24,3 +24,8 @@ PHP
  mysqli_connect() 사용하여 작성하였습니다.
  
  
+ 
+ 
+# capture image
+<img src="https://user-images.githubusercontent.com/18298589/234736333-8caaa15b-4ae1-4a58-a21a-777c753d0400.png"/>
+
