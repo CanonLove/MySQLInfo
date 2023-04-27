@@ -2,6 +2,7 @@
 ###############################################
 #
 # 2023.04.26 DB Information by CanonLove
+# https://github.com/CanonLove/MySQLInfo
 # 2023.04.26 ver 1.0.0
 # 2023.04.26 program that outputs only one DB information
 #
