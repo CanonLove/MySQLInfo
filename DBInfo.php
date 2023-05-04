@@ -4,7 +4,7 @@
 # 2023.04.26 DB Information by CanonLove
 # https://github.com/CanonLove/MySQLInfo
 # 2023.04.26 ver 1.0.0
-# 2023.05.04 ver 1.0.1
+# 2023.05.04 ver 1.0.2
 # 2023.04.26 program that outputs only one DB information
 #
 ###############################################
@@ -191,7 +191,7 @@ if( ($DB1Ip == "") || ($DB1Name=="")  || ($DB1User=="") ) {
 
 			$TB1 = $TableDB[$RowCnt];
 			// $result2 = mysqli_query($conn,"SELECT COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE, COLUMN_KEY, COLUMN_DEFAULT, EXTRA, COLUMN_COMMENT FROM information_schema.columns WHERE table_name='$TB1'ORDER BY ORDINAL_POSITION ASC");
-			$result2 = mysqli_query($conn,"SELECT COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE, COLUMN_KEY, COLUMN_DEFAULT, EXTRA, COLUMN_COMMENT FROM information_schema.columns WHERE table_name='$TB1' GROUP BY ORDINAL_POSITION ORDER BY ORDINAL_POSITION ASC");
+			$result2 = mysqli_query($conn,"SELECT COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE, COLUMN_KEY, COLUMN_DEFAULT, EXTRA, COLUMN_COMMENT FROM information_schema.columns WHERE TABLE_NAME='$TB1' AND TABLE_SCHEMA='$DB1Name' GROUP BY ORDINAL_POSITION ORDER BY ORDINAL_POSITION ASC");
 
 			if (mysqli_num_rows($result2) > 0) {
 				$num=0;
