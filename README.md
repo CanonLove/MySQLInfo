@@ -33,10 +33,11 @@ Like "192.168.1.1:3306" attach it to the "DB INFO" input box and use it.
  
  
 # capture image
-<img src="https://user-images.githubusercontent.com/18298589/234738097-563d092b-0fd9-423a-af99-af29c3fa634e.png"/>
+<img src="https://user-images.githubusercontent.com/18298589/234738097-563d092b-0fd9-423a-af99-af29c3fa634e.png" border="1" />
 
 
-
+ <br><br><br>
+ 
 # LICENSE
 
 MIT License  (Guided by the LICENSE.md file)
