@@ -4,7 +4,7 @@
 # 2023.04.26 DB Information by CanonLove
 # https://github.com/CanonLove/MySQLInfo
 # 2023.04.26 ver 1.0.0
-# 2023.05.04 ver 1.0.2
+# 2023.05.17 ver 1.0.3
 # 2023.04.26 program that outputs only one DB information
 #
 ###############################################
@@ -177,6 +177,8 @@ if( ($DB1Ip == "") || ($DB1Name=="")  || ($DB1User=="") ) {
 			echo "</font></div>"; 
 
 	} else {
+		
+		mysqli_set_charset($conn, 'utf8');	// Delete if 'utf-8' is not used
 
 		########################## DB Connect START ###############
 
@@ -239,7 +241,8 @@ if( ($DB1Ip == "") || ($DB1Name=="")  || ($DB1User=="") ) {
 			echo "</font></div>";
 
 		} else {
-
+			
+			mysqli_set_charset($conn, 'utf8');	// Delete if 'utf-8' is not used
 
 			/*  DB Procedure START */
 			$sql = "SHOW PROCEDURE STATUS WHERE Db = '$DB1Name';";
